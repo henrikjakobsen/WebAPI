@@ -1,0 +1,32 @@
+﻿<div class="grid_16 body-container">
+    <div class="margin grid_6 alpha" style="clear: both;">
+        <form id="addProduct">
+            <label for="Name">Name</label>
+            <input type="text" class="text grid_4" name="Name" id="name" />
+            <label for="Price">Price</label>
+            <input type="text" class="text grid_4" name="Price" id="price" />
+            <input type="submit" id="addNewProduct" class="button small green" value="Add" />
+        </form>
+        <label for="productId">Serach By ID</label>
+        <input type="text" class="text grid_4" size="20" id="productId" />
+        <input type="button" class="button small gray" onclick="find();" value="Search" />
+        <label id="product">
+        </label>
+    </div>
+    <div class="grid_8 omega">
+        <ul class="products" id="products">
+        </ul>
+    </div>
+</div>
+
+<div class="main-content">
+    <script id="productTemplate" type="text/x-jsrender"> 
+        Id: {{>Id}} <br />
+        Product Name: {{>Name}} <br />
+        Category: {{>Category}} <br /> 
+        Price: {{>Price}} <br />
+        <br /> 
+        
+        @*<a class="button small red removeProduct" href="$%7B%20Self%20%7D">Remove</a>*@
+    </script>
+</div>

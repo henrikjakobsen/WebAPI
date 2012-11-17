@@ -1,0 +1,54 @@
+# Ignore file for Visual Studio
+
+# use glob syntax
+syntax: glob
+
+# Ignore Config files with keys and passwords
+#ServiceConfiguration*.cscfg
+#Web*.config
+#App*.config
+
+# Ignore Visual Studio files
+*.obj
+#*.exe
+#*.pdb
+*.user
+*.aps
+*.pch
+*.vspscc
+*.vshost.*
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+*.lib
+*.sbr
+*.scc
+*.orig
+UpgradeLog*.*
+UpgradeReport*.*
+[Bb]in
+[Dd]ebug*/
+obj/
+[Rr]elease*/
+_ReSharper*/
+[Tt]est[Rr]esult*
+[Bb]uild[Ll]og.*
+*.[Pp]ublish.xml
+glob:*.vs10x
+*.ReSharper
+[Pp]ublish
+[Rr]eleaseFiles
+[Cc]sx/
+[Bb]ackup1/
+
+# Mac Files
+.DS_Store
+*.DS_Store
+._*
